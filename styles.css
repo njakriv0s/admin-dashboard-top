@@ -2,6 +2,10 @@
     --blue-sidebar: #1a92d4;
     --grey-background: #e2e8f0;
     --main-content-icon-size: 1.5em;
+    --font-size-1: 700 1em 'Roboto', sans-serif;
+    --font-size-3: 700 0.7em 'Roboto', sans-serif;
+    --font-size-5: 700 0.6em 'Roboto', sans-serif;
+
 }
 
 * {
@@ -63,7 +67,7 @@ body {
 a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
+    font: var(--font-size-1);
 }
 
 .sidebar svg {
@@ -137,6 +141,12 @@ a {
     height: 1.5em;
 }
 
+.container-header-profile-left {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
 .profile-photo-wrapper-large {
     display: flex;
     background: #ea8a22;
@@ -152,6 +162,54 @@ a {
 .profile-photo-large {
     height: 1.8em;
 }
+
+.container-header-profile {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.8em;
+}
+
+.container-header-name-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+}
+
+.container-header-name-wrapper-2 {
+    display: flex;
+}
+
+.greeting-main {
+    font: var(--font-size-5);
+
+}
+
+.container-header-name-wrapper-2>p {
+    font: var(--font-size-1);
+}
+
+#handle-main {
+    margin-left: 0.2em;
+}
+
+.container-header-profile-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header-button {
+    color: white;
+    background: var(--blue-sidebar);
+    font: var(--font-size-3);
+    margin: 0 max(0.2em, 0.8vw);
+    width: 7em;
+    height: 3em;
+    border-radius:16px;
+}
+
+
 
 /* CONTAINER CONTENT */
 
