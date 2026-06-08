@@ -1,8 +1,12 @@
 :root {
     --blue-sidebar: #1a92d4;
     --grey-background: #e2e8f0;
+    --user-color: #ea8a22;
+    --content-text-grey: #636363;
     --main-content-icon-size: 1.5em;
+    --card-icon-size: 1.2em;
     --font-size-1: 700 1em 'Roboto', sans-serif;
+    --font-size-2: 700 0.8em 'Roboto', sans-serif;
     --font-size-3: 700 0.7em 'Roboto', sans-serif;
     --font-size-5: 700 0.6em 'Roboto', sans-serif;
 
@@ -130,7 +134,7 @@ a {
 
 .profile-photo-wrapper {
     display: flex;
-    background: #ea8a22;
+    background: var(--user-color);
     padding: 0.4em;
     border-radius: 50%;
     align-items: center;
@@ -149,7 +153,7 @@ a {
 
 .profile-photo-wrapper-large {
     display: flex;
-    background: #ea8a22;
+    background: var(--user-color);
     padding: 0.6em;
     border-radius: 50%;
     align-items: center;
@@ -183,7 +187,6 @@ a {
 
 .greeting-main {
     font: var(--font-size-5);
-
 }
 
 .container-header-name-wrapper-2>p {
@@ -209,12 +212,88 @@ a {
     border-radius:16px;
 }
 
-
-
 /* CONTAINER CONTENT */
 
 .container-content {
-    background: var(--grey-background)
+    background: var(--grey-background);
+    padding: 2em 1em;
+}
+
+.container-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+/* .container-content-left {
+    
+} */
+
+.left-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap: 1em;
+}
+
+
+.card {
+    background: white;
+    border-left: 4px solid var(--user-color);
+    border-radius: 5px;
+    padding: 2em 1em;
+    width: 18em;
+    height: 11em;
+}
+
+.card-title {
+    font: var(--font-size-2);
+}
+
+.card-content {
+    font: var(--font-size-3);
+    font-weight: 400;
+    color: var(--content-text-grey);
+}
+
+.card svg {
+    height: var(--card-icon-size);
+    fill: var(--content-text-grey);
+}
+
+.container-content-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.card-vertical {
+    background: white;
+    border-radius: 5px;
+    padding: 2em 1em;
+    width: 13em;
+}
+
+.card-vertical-section {
+    border-bottom: 1px solid var(--content-text-grey);
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.card-vertical-section:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.card-vertical-title {
+    font: var(--font-size-3);
+}
+
+.card-vertical-content {
+    font: var(--font-size-5);
+    color: var(--content-text-grey);
+    font-weight: 400;
 }
 
 
