@@ -1,5 +1,6 @@
 :root {
     --blue-sidebar: #1a92d4;
+    --blue-sidebar-hover: #147eb6;
     --grey-background: #e2e8f0;
     --user-color: #ea8a22;
     --content-text-grey: #636363;
@@ -55,6 +56,10 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     color: white;
+}
+
+#dashboard-p:hover {
+    cursor: pointer;
 }
 
 #dashboard-icon {
@@ -124,6 +129,15 @@ a {
     padding-right: 0.5em;
 }
 
+.container-header svg:hover {
+    cursor: pointer;
+    transform: rotate(15deg);
+}
+
+.container-header svg:active {
+    transform: translateY(1px);
+}
+
 .container-header-search-right {
     display: grid;
     grid-template-columns: repeat(3, minmax(min-content, max-content));
@@ -143,8 +157,25 @@ a {
     justify-content: center;
 }
 
+.profile-photo-wrapper:hover {
+    cursor: pointer;
+    transform: rotate(15deg);
+}
+
+.profile-photo-wrapper:active {
+    transform: translateY(1px);
+}
+
 .profile-photo-small {
     height: 1.5em;
+}
+
+.profile-name {
+    font: var(--font-size-2);
+}
+
+.profile-name:hover {
+    cursor: pointer;
 }
 
 .container-header-profile-left {
@@ -163,6 +194,15 @@ a {
     height: 3.2em;
     width: 3.2em;
     align-self: flex-start;
+}
+
+.profile-photo-wrapper-large:hover {
+    cursor: pointer;
+    transform: rotate(15deg);
+}
+
+.profile-photo-wrapper-large:active {
+    transform: translateY(1px);
 }
 
 .profile-photo-large {
@@ -195,6 +235,10 @@ a {
     font: var(--font-size-1);
 }
 
+.container-header-name-wrapper-2>p:hover {
+    cursor: pointer;
+}
+
 #handle-main {
     margin-left: 0.2em;
 }
@@ -212,6 +256,15 @@ a {
     width: 7em;
     height: 3em;
     border-radius:16px;
+}
+
+.header-button:hover {
+    background: var(--blue-sidebar-hover);
+    cursor: pointer;
+}
+
+.header-button:active {
+    transform: translateY(1px);
 }
 
 /* CONTAINER CONTENT */
@@ -255,6 +308,10 @@ a {
     font: var(--font-size-2);
 }
 
+.card-title {
+    cursor: pointer;
+}
+
 .card-content {
     font: var(--font-size-3);
     font-weight: 400;
@@ -272,6 +329,15 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+
+.card-svg svg:hover {
+    cursor: pointer;
+    transform: rotate(15deg);
+}
+
+.card-svg svg:active {
+    transform: translateY(1px);
 }
 
 .container-content-right {
@@ -307,6 +373,10 @@ a {
     font: var(--font-size-3);
 }
 
+.card-vertical-title:hover {
+    cursor: pointer;
+}
+
 .card-vertical-content {
     font: var(--font-size-5);
     color: var(--content-text-grey);
@@ -328,7 +398,7 @@ a {
 .card-vertical-2-section {
     display: flex;
     margin-bottom: 0.5em;
-    
+    align-content: center;
 }
 
 .card-vertical-2-section:last-child {
@@ -338,6 +408,10 @@ a {
 .card-vertical-2-handle {
     font: var(--font-size-3);
     font-weight: 600;
+}
+
+.card-vertical-2-handle:hover {
+    cursor: pointer;
 }
 
 .card-vertical-2-project {
@@ -354,6 +428,15 @@ a {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+}
+
+.profile-photo-wrapper-trending:hover {
+    cursor: pointer;
+    transform: rotate(15deg);
+}
+
+.profile-photo-wrapper-trending:active {
+    transform: translateY(1px);
 }
 
 
